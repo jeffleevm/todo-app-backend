@@ -1,0 +1,19 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: demo-todo-app-backend
+  namespace: demo-project
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: demo-todo-app
+        tier: demo-todo-app-backend
+        track: stable
+    spec:
+      containers:
+        - name: demo-todo-app-backend
+          image: "jeffleehk/demo-todo-app-backend:latest"
+          ports:
+          - containerPort: 8080
