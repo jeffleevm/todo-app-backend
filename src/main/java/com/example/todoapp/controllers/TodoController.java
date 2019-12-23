@@ -22,7 +22,7 @@ import com.example.todoapp.repositories.TodoRepository;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin("*")
+@CrossOrigin()
 public class TodoController {
 
     @Autowired

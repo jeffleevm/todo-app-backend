@@ -1,3 +1,6 @@
+# Todo Application Backend
+
+```
 #!/bin/bash
 
 mvn clean package
@@ -7,3 +10,4 @@ docker rmi jeffleevm/todo-app-backend
 docker build -t jeffleevm/todo-app-backend:latest .
 docker login --username jeffleevm
 docker push jeffleevm/todo-app-backend:latest
+```
