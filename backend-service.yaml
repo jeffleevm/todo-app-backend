@@ -9,4 +9,4 @@ spec:
   selector:
     app: todo-app
     tier: todo-app-backend
-  type: ClusterIP
+  type: LoadBalancer
