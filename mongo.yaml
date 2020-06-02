@@ -4,7 +4,6 @@ metadata:
   labels:
     name: mongo
   name: mongo
-  namespace: todo-app
 spec:
   replicas: 1
   template:
@@ -26,7 +25,6 @@ metadata:
   labels:
     name: mongo
   name: mongo
-  namespace: todo-app
 spec:
   ports:
     - port: 27017
